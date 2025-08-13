@@ -1,0 +1,156 @@
+body {
+  background: linear-gradient(120deg, #7fdaff 0%, #eaeaf6 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.card-container {
+  max-width: 850px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 7px 24px rgba(23, 101, 125, 0.2);
+  padding: 32px 28px;
+}
+
+h2 {
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: #36729c;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Separate the table visually */
+table {
+  margin-top: 38px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(23, 101, 125, 0.09);
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+th {
+  background: #f5f7fa;
+  color: #4597b3;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.fields-row {
+  display: flex;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+
+
+@media (max-width: 700px) {
+  .fields-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
+.card-form label {
+  font-size: 14px;
+  color: #497690;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card-form input, .card-form select {
+  padding: 10px 12px;
+  border: 1px solid #e5e8f0;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 7px;
+  transition: border-color 0.2s;
+  outline: none;
+  background: #fafbfc;
+}
+
+.card-form input:focus, .card-form select:focus {
+  border-color: #42b7f8;
+}
+
+.register-btn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #42b7f8, #45e1b6);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 11px 0;
+  border-radius: 7px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.register-btn:hover {
+  box-shadow: 0 4px 16px rgba(66,183,248,0.15);
+  background: linear-gradient(90deg, #2fa9da, #30cfa1);
+}
+
+.edit-btn, .delete-btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.edit-btn {
+  background: #e0f5ff;
+  color: #168be9;
+}
+
+.edit-btn:hover {
+  background: #b6e0ff;
+}
+
+.delete-btn {
+  background: #fddee7;
+  color: #e64770;
+}
+
+.delete-btn:hover {
+  background: #faafc8;
+}
+
+@media (max-width: 950px) {
+  .card-container {
+    max-width: 98vw;
+    padding: 12px;
+  }
+  table {
+    font-size: 13px;
+  }
+}

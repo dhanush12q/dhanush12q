@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(120deg, #a6c0fe 0%, #80f0f6 100%);
+}
+.admin-heading {
+    text-align: center;
+    font-size: 50px;
+    color: #7b2ff2;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-bottom: 36px;
+    text-shadow: 0 2px 4px rgba(123,47,242,0.15);
+}
+.admin-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #80f6ea;
+    box-shadow: 0 6px 24px 0 rgba(123, 47, 242, 0.16);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 16px;
+    background: #fff;
+    transition: box-shadow 0.25s;
+}
+.admin-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 400px;
+    background: rgba(255,255,255,0.9);
+    border: 2px solid #7b2ff2;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(123,47,242,0.12);
+    padding: 32px 24px;
+    margin: 48px auto;
+    transition: transform 0.25s ease, box-shadow 0.25s;
+}
+.admin-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 48px 0 rgba(123, 47, 242, 0.18);
+}
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
+
+.admin-card {
+    animation: cardFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1);
+}.video-btn {
+    width: 220px;
+    padding: 16px 0;
+    margin: 8px 0;
+    background: linear-gradient(95deg, #7b2ff2 20%, #57c9f3 100%);
+    color: #fff;
+    font-size: 1.12em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 6px 18px rgba(128, 0, 128, 0.10);
+    cursor: pointer;
+    transition:
+        background 0.3s cubic-bezier(.47,1.64,.41,.8),
+        transform 0.15s cubic-bezier(.47,1.64,.41,.8),
+        box-shadow 0.18s;
+    outline: none;
+    letter-spacing: 0.01em;
+}
+
+.video-btn:hover,
+.video-btn:focus {
+    background: linear-gradient(120deg, #57eef3 40%, #7b2ff2 100%);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0px 10px 30px 0px rgba(243, 87, 168, 0.16);
+}
